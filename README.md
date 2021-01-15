@@ -19,6 +19,6 @@ asciidoctor-pdfをメインに使っているので、他の形式での出力�
    ```powershell
    # Windows想定
    docker run -it --rm \
-   	-v ${pwd}/example:/documents -v "C:\Windows\Fonts:/documents/fonts"
-	kazuki0529/asciidoctor-cjk
+    -v ${pwd}/example:/documents -v "C:\Windows\Fonts:/documents/fonts" \
+    kazuki0529/asciidoctor-cjk
    ```
