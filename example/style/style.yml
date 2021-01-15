@@ -1,0 +1,12 @@
+extends: default
+
+font:
+  catalog:
+    YuMin:
+      normal: yumin.ttf
+      italic: yumin.ttf
+      bold: yumindb.ttf
+      bold_italic: yumindb.ttf
+
+base:
+  font_family: YuMin

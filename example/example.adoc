@@ -1,0 +1,46 @@
+:lang:          ja
+:doctype:       book
+
+:docname:       サンプル
+:title:         サンプル
+:icons:         font
+
+:pdf-fontsdir:  ./fonts
+
+:pdf-style:     ./style/style.yml
+
+
+= サンプル
+
+サンプルドキュメントです。
+
+== plantuml
+
+とりあえず Ricty Diminished フォントなら使える。
+
+[plantuml, uml/usecase, png]
+....
+@startuml
+left to right direction
+
+skinparam{
+  ' 日本語表示は↓のフォントじゃないと出力されない
+  defaultFontName "Ricty Diminished Discord
+  packageStyle rectangle
+  componentStyle uml2
+  backgroundColor transparent
+}
+
+actor customer
+actor clerk
+note right: 日本語表示
+
+rectangle checkout {
+  customer -- (checkout)
+  (checkout) .> (payment) : include
+  (help) .> (checkout) : extends
+  (checkout) -- clerk
+}
+@enduml
+....
+
