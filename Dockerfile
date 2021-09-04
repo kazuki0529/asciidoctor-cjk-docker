@@ -1,4 +1,4 @@
-FROM asciidoctor/docker-asciidoctor:1.10.0
+FROM asciidoctor/docker-asciidoctor:1.11.0
 
 ARG ASCIIDOCTOR_PDF_CJK_VERSION='0.1.3'
 ARG FONT_RICTY_DIMINISHED_VERSION='3.2.3'
