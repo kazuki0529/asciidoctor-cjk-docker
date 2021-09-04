@@ -1,6 +1,5 @@
 FROM asciidoctor/docker-asciidoctor:1.11.0
 
-ARG ASCIIDOCTOR_PDF_CJK_VERSION='0.1.3'
 ARG FONT_RICTY_DIMINISHED_VERSION='3.2.3'
 
 # RictyDiminishedフォントのインストール
@@ -12,10 +11,6 @@ RUN apk add --update --no-cache fontconfig \
     && mv ./RictyDiminished-*/RictyDiminishedDiscord-*.ttf '/usr/share/fonts/Ricty Diminished Discord' \
     && rm -rf RictyDiminished \
     && fc-cache -fv
-
-# Install asciidoctor-pdf-cjk
-RUN gem install -N \
-    "asciidoctor-pdf-cjk:${ASCIIDOCTOR_PDF_CJK_VERSION}"
 
 WORKDIR /documents
 VOLUME ["/documents"]
