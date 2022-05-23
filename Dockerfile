@@ -1,4 +1,4 @@
-FROM asciidoctor/docker-asciidoctor:1.16.0
+FROM asciidoctor/docker-asciidoctor:1.17.0
 
 ARG FONT_RICTY_DIMINISHED_VERSION='3.2.3'
 
