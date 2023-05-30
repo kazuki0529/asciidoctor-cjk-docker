@@ -3,4 +3,5 @@
 asciidoctor-pdf \
   example.adoc -n \
   -r asciidoctor-diagram \
-  -r asciidoctor-pdf-cjk
+  -a scripts=cjk \
+  -a pdf-theme=default-with-fallback-font
